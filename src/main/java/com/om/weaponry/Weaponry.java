@@ -1,6 +1,7 @@
-package com.om.weaponsnstuff;
+package com.om.weaponry;
 
-import com.om.weaponsnstuff.item.ModItems;
+import com.om.weaponry.block.ModBlocks;
+import com.om.weaponry.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,17 +12,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(WeaponsnStuff.MOD_ID)
-public class WeaponsnStuff {
-    public static final String MOD_ID = "weaponsnstuff";
+@Mod(Weaponry.MOD_ID)
+public class Weaponry {
+    public static final String MOD_ID = "weaponry";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public WeaponsnStuff() {
+    public Weaponry() {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

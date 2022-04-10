@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "weaponry:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "weaponry:bronze_block"
+  }
+}
