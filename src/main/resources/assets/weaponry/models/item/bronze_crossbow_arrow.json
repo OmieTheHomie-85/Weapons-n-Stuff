@@ -1,0 +1,6 @@
+{
+  "parent": "weaponry:item/bronze_crossbow",
+  "textures": {
+    "layer0": "weaponry:item/bronze_crossbow_arrow"
+  }
+}

@@ -1,6 +1,7 @@
 package com.om.weaponry.item;
 
 import com.om.weaponry.Weaponry;
+import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +15,8 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.WEAPONRY)));
 
+    public static final RegistryObject<Item> BRONZE_CROSSBOW = ITEMS.register("bronze_crossbow",
+            () -> new CrossbowItem(new Item.Properties().tab(ModCreativeModeTab.WEAPONRY).durability(500)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
